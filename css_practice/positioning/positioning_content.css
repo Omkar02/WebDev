@@ -1,0 +1,36 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    background: #CFFDE1;
+    margin: 0;
+}
+
+.one-box,
+.two-box{
+    height: 100vh;
+    flex: 1 1 0;
+}
+
+.one-box{
+    background: #FED049;
+}
+
+.two-box{
+    background: #68B984;
+    position: relative;
+
+    /* top: 2%;
+    left: 2%; */
+}
+
+.child-box{
+    background: #3D5656;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+}

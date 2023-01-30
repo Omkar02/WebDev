@@ -1,0 +1,160 @@
+/* Mobile First Design  */
+:root{
+    --green: #ABC270;
+    --yellow: #FEC868;
+    --orange: #FDA769;
+    --brown: #473C33;
+
+    --shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+    min-width: 100%;
+
+    display: grid;
+    grid-template-rows: 550px 1fr 0.2fr;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: "albums"
+                         "playlist"
+                         "player";
+}
+
+img{
+    max-width: 100%;
+}
+._to_small{
+    font-size: 15px;
+}
+
+._to_hide{
+    display: none;
+}
+.playlist{
+    background-color: var(--brown);
+    grid-area: playlist;
+    box-shadow: var(--shadow);
+}
+
+.playlist > div{
+    display: flex;
+    box-shadow: var(--shadow);
+}
+
+.playlist > div p{
+    flex: 0 80%;
+    padding: 10px;
+
+    font-size: 20px;
+    color: var(--yellow);
+    margin-top: 1px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    display: none;
+    box-shadow: var(--shadow);    
+}
+
+.albums{
+    grid-area: albums;  
+    background-color: var(--brown);
+    box-shadow: var(--shadow); 
+}
+
+.main-album{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    grid-template-areas:"album-art" 
+                        "album-details";
+    text-align: center;
+}
+
+.album-art{
+    grid-area: album-art;
+    width: 420px;
+    margin: 10px;
+    box-shadow: var(--shadow);
+}
+
+.album-details{
+    grid-area: album-details;
+    color: var(--yellow);
+    font-size: 25px;
+    margin: 10px;
+    
+}
+
+.player{
+    background-color: var(--brown);
+    grid-area: player;
+    box-shadow: var(--shadow);    
+}
+
+.main_player{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+    grid-gap: 10px;
+
+    color: var(--orange);
+    font-size: 25px;
+}
+
+.cur-art{
+    box-shadow: var(--shadow);
+}
+
+
+/* Larget Screen  */
+@media only screen and (min-width:1000px) {
+    body{
+        grid-template-rows: 500px 1fr 0.2fr;
+        grid-template-columns: 90px 1fr;
+
+        grid-template-areas: "sidebar albums"
+                             "sidebar playlist"
+                             "player player";
+    }
+
+    .sidebar{
+        background-color: var(--brown);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar i{
+        font-size: 35px;
+        border-radius: 10px;
+        color: var(--orange);
+        padding: 20px;
+        text-align: center;
+        /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+        /* box-shadow: var(--shadow); */
+    }
+
+    .main-album{
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        grid-template-areas:"album-art album-details";
+        text-align: left;
+        margin: 20px;
+    }
+
+    ._to_hide{
+        display: block;
+    }
+
+}

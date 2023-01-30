@@ -1,0 +1,84 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exersice_5_styles.css">
+        <title>Exercise 5</title>
+    </head>
+    <body>
+        <div>
+            <h1>Personal Linkes Form</h1>
+            <form>
+                <hgroup>
+                    <h2>Please Enter Your Name</h2>
+                    <label for="first_name">First Name: </label>
+                    <input type="text" name="first_name" placeholder="First Name">
+
+                    <label for="last_name">Last Name: </label>
+                    <input type="text" name="last_name" placeholder="Last Name">
+
+                    
+                    <button type="reset">Reset Name</button>
+                </hgroup>
+
+                <hgroup>
+                    <h2>Favorite Educative course</h2>
+                    <p>Please select your course of choice from the <code>selection menu</code> below:</p>
+                    <select id="selector">
+                        <optgroup label="Interview Category">
+                            <option value="Front-end Interview">Front-end Interview</option>
+                            <option value="Back-end Interview">Back-end Interview</option>
+                        </optgroup>
+
+                        <optgroup label="Web Language">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </optgroup>
+
+                    </select>
+                </hgroup>
+                
+                <hgroup>
+                    <h2>Favorite Icecream</h2>
+                    <p>Select all the ice cream flavour that you like:</p>
+                    <label for="choco"> 
+                        <strong>Chocolate</strong>
+                        <input type="checkbox" id="choco" name="flavour" checked>
+                    </label>
+
+                    <label for="mango">
+                        <strong>Mango</strong> 
+                        <input type="checkbox" name="flavour" id="mango">
+                    </label>
+
+                    <label for="vanilla">
+                        <strong>Vanilla</strong> 
+                        <input type="checkbox" name="flavour" id="vanilla">
+                    </label>
+                </hgroup>
+
+                <hgroup>
+                    <h2>Favorite time of the day</h2>
+                    <p>What time of the day are you most productive?</p>
+                    <label for="morning"> 
+                        <strong>Morning</strong>
+                        <input type="radio" id="morning" checked>
+                    </label>
+
+                    <label for="afternoon">
+                        <strong>Afternoon</strong> 
+                        <input type="radio" id="afternoon">
+                    </label>
+
+    
+                    <label for="evening">
+                        <strong>Evening</strong> 
+                        <input type="radio" id="evening">
+                    </label>
+                </hgroup>
+
+            </form>
+        </div>
+        
+    </body>
+</html>

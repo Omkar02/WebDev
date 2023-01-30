@@ -1,0 +1,49 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    border-bottom: 2px solid black;
+}
+
+a{
+    color: darkblue;
+    font-weight: bold;
+}
+
+.no-link a{
+    color: red;
+    cursor: not-allowed;
+}
+
+.highlight{
+    background-color: yellow;
+}
+
+.justify{
+    text-transform: capitalize;
+}
+
+.center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caps{
+    text-transform: uppercase;
+}
+
+.indent{
+    text-indent: 2rem;
+}
+
+.drop-cap:first-letter{
+    font-weight: bold;
+    font-size: 200%;
+}
