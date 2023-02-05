@@ -1,0 +1,73 @@
+:root{
+    --green: #36AE7C;
+    --red: #EB5353;
+    --yellow: #F9D923;
+    --blue: #187498;
+    --border: 2px solid;
+}
+/* Mobile First Design */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+}
+
+header,
+footer{
+    height: 10%;
+    background: var(--blue);
+    border: var(--border);
+}
+
+.main-banner,
+.contact-form{
+    height: 20%;
+    background: var(--yellow);
+    border: var(--border);
+}
+
+.blog-posts{
+    height: 40%;
+    line-height: 40%;
+}
+
+.post{
+    min-height: 33.33%;
+    padding: 10px 10px;
+    background: var(--green);
+    border: var(--border);
+}
+
+.d-none{
+    display: none;
+}
+
+
+@media only screen and (min-width: 600px){
+    .blog-posts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .post{
+        min-width: 33.33%;
+    }
+
+    .d-none{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body{
+        width: 800px;
+        margin: auto;
+    }
+    
+}

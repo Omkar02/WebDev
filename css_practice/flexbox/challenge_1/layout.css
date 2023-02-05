@@ -1,0 +1,59 @@
+:root{
+    --green: #36AE7C;
+    --red: #EB5353;
+    --yellow: #F9D923;
+    --blue: #187498;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    min-height: 100%;
+
+}
+
+header,
+footer{
+    min-width: 100%;
+    min-height: 15%;
+    border: 2px solid;
+    padding: 10px 10px;
+    background: var(--green);
+}
+
+.top-container{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 20%;
+}
+
+.main-banner,
+.contact-form{
+    width: 50%;
+    min-height: 150px;
+    background: var(--blue);
+    box-sizing: border-box;
+    border: 2px solid;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.contact-form{
+    background: var(--red);
+}
+
+.blogposts{
+    min-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post{
+    min-width: 33.33%;
+    min-height: 150px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    background: var(--yellow);
+    border: 2px solid;
+}
