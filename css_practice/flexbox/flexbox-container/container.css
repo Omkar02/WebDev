@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #36AE7C;
+    --red: #EB5353;
+    --yellow: #F9D923;
+    --blue: #187498;
+    --border: 2px solid;
+}
+
+body{
+    width: 600px;
+    margin: auto;
+    margin-top: 500px;
+
+    font-size: 30px;
+}
+
+.main-container{
+    display: flex;
+
+    padding: 20px;
+    background: var(--blue);
+
+    justify-content: space-around;
+}
+
+.left-container,
+.right-container{
+    background: var(--yellow);
+    width: 60%;
+    height: 320px;
+    margin: 10px;
+}
+
+.right-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.container-child{
+    height: 40%;
+    background: var(--green);
+    width: 80%;
+}
