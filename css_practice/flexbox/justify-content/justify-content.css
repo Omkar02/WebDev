@@ -1,0 +1,66 @@
+:root{
+    --one: #395144;
+    --two: #4E6C50;
+    --three: #AA8B56;
+    --four: #F0EBCE;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    width: 1000px;
+    margin:auto;
+
+}
+
+.child-box{
+    background: var(--one);
+    height: 50px;
+    width: 150px;
+    color: var(--four);
+    border: 10px solid var(--two);
+}
+
+.flex-start,
+.flex-end,
+.center,
+.space-around,
+.space-between,
+.space-evenly{
+    display: flex;
+    width: 900px;
+    background: var(--three);
+    margin: auto;
+    justify-content: flex-start;
+    border: 1px solid;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}

@@ -1,0 +1,68 @@
+:root{
+    --one: #395144;
+    --two: #4E6C50;
+    --three: #AA8B56;
+    --four: #F0EBCE;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-size: 25px;
+}
+
+.outer-container{
+    width: 250px;
+}
+
+.name{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.child-box{
+    width: 200px;
+    height: 150px;
+    background: var(--one);
+    border: 10px solid var(--three);
+    color: var(--four);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 200px;
+    background: var(--four);
+    margin: 20px;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.spce-between{
+    justify-content: space-between;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
