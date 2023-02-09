@@ -1,0 +1,68 @@
+:root{
+    --one: #D8D9CF;
+    --two: #EDEDED;
+    --three: #FF8787;
+    --four: #E26868;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.align-container{
+    height: 600px;
+    width: 400px;
+    background: var(--two);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.align-container div:first-child,
+.align-container div:last-child{
+    font-size: 30px;
+}
+
+/* ----- Items ------- */
+.item{
+    height: 150px;
+    background: var(--four);
+    border: 1px solid;
+}
+
+.fixed-width{
+    width: 200px;
+}
+
+.min-width{
+    min-width: 200px;
+}
+
+.max-width{
+    max-width: 200px;
+}
+
+/* ------------------------- */
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.center{
+    align-items: center;
+}
+
+.baseline{
+    align-items: baseline;
+}
