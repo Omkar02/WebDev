@@ -1,0 +1,32 @@
+:root{
+    --black: #413F42;
+    --white: #D0C9C0;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.post{
+    height: 150px;
+    min-width: 225px;
+    background: var(--white);
+    border: 2px solid var(--black);
+    padding: 10px;
+
+}
+
+.ruler{
+    text-align: center;
+    color: var(--white);
+    background: var(--black);
+    padding: 10px;
+}
