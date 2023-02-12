@@ -1,0 +1,38 @@
+:root{
+    --black: #413F42;
+    --white: #D0C9C0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: solid;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.post{
+    width: 150px;
+    height: 100px;
+    border: solid;
+    margin: 15px;
+    background: var(--white);
+}
+
+.row-wrap-reverse{
+    flex-flow: row wrap-reverse;
+}
+
+.row-reverse-wrap-reverse{
+    flex-flow: row-reverse wrap-reverse;
+}
