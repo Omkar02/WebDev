@@ -1,0 +1,78 @@
+:root{
+    --one: #36AE7C;
+    --two: #F9D923;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 900px;
+    margin: 0 auto;
+
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: solid;
+}
+
+.lable{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.flex-direction-buttons,
+.align-content-buttons{
+    margin: 10px;
+}
+
+button{
+    font-size: 20px;
+    background: local;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left: 5px;
+
+    height: 40px;
+}
+
+button:hover{
+    background: var(--one);
+}
+
+button:active{
+    background: var(--two);
+}
+
+h2{
+    font-size: 30px;
+    border-bottom: solid;
+}
+
+.current-val{
+    color: var(--one);
+}
+
+.container{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: var(--two);
+
+    margin: 0 auto;
+}
+
+.blogposts{
+    height: 100px;
+    width: 200px;
+
+    background: var(--one);
+    border: 1px solid;
+    padding: 10px;
+    font-size: 20px;
+}
