@@ -1,0 +1,55 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="flex-grow_and_basis-1.css">
+        <script src="flex-grow_and_basis-1.js" defer></script>
+        <title>Flex-Grow & Flex-Basis</title>
+    </head>
+    <body>
+        <h2 class="name">600px container, 150px min-width</h2>
+        <div class="container w-600">
+            <div class="item">150px</div>
+            <div class="item">150px</div>
+        </div>
+        <div class="ruler w-150">150px</div>
+
+        <h2 class="name">600px container, first item grows</h2>
+        <div class="container w-600">
+            <div class="item item-grow1">flex-grow: 1</div>
+            <div class="item">150px</div>
+        </div>
+        <div class="ruler w-450">450px</div>
+
+        <h2 class="name">600px container, both items grows</h2>
+        <div class="container w-600">
+            <div class="item item-grow1">flex-grow: 1</div>
+            <div class="item item-grow1">flex-grow: 1</div>
+        </div>
+        <div class="ruler w-300">300px</div>
+
+        <h2 class="name">600px container, items grows with 1:3 differently</h2>
+        <div class="container w-600">
+            <div class="item item-grow1">flex-grow: 1</div>
+            <div class="item item-grow3">flex-grow: 3</div>
+        </div>
+        <div class="ruler w-600">
+            Exact widths cannot be revealed without setting flex-basis.
+        </div>
+
+        <h2>Variable Container - Items grow differently with 1:3 ratio</h2>
+        <label class="width-changer">
+            Container width: 
+            <button class="width-minus">-</button>
+            <input type="range" class="width-slider" min="300" max="600" value="300" step="10">
+            <button class="width-plus">+</button>
+            <span class="js-width-value">300px</span>
+        </label>
+
+        <div class="container js-variable-container" style="width:300px;">
+            <div class="item item-grow1">flex-grow: 1</div>
+            <div class="item item-grow3">flex-grow: 3</div>
+        </div>
+        <div class="ruler w-600">
+            Exact widths cannot be revealed without setting flex-basis.
+        </div>
+    </body>
+</html>
