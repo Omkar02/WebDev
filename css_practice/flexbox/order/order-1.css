@@ -1,0 +1,41 @@
+body{
+    width: 600px;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: lightgrey;
+    margin-top: 10px;
+}
+
+.js-range-val{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.item{
+    border: 1px solid black;
+    width: 125px;
+    height: 50px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+.or-4{
+    order: 4;
+}
+.or-3{
+    order: 3;
+}
+.or-2{
+    order: 2;
+}
+.or-1{
+    order: 1;
+}
+.om-1{
+    order: -1;
+}
